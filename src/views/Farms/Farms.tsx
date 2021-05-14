@@ -99,6 +99,7 @@ const Farms: React.FC = () => {
       const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(quoteTokenPriceUsd)
       const apr = new BigNumber(getFarmApr(farm.poolWeight, cakePrice, totalLiquidity.plus(1)))
 
+
       // console.log("TokenName",farm.lpSymbol)
       // console.log("weight",farm.poolWeight)
       // console.log("totalLiquidity", totalLiquidity.plus(1).toString())
