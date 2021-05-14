@@ -1,0 +1,16 @@
+{
+  "short_name": "MilkSwap",
+  "name": "MilkSwap",
+  "description": "MilkSwap, the milkiest exchange on Binance Smart Chain.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
