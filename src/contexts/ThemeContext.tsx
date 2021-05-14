@@ -1,6 +1,13 @@
+/*
+ * @Author: Nic(❤❤️ niccoming@gmail.com ❤❤️)
+ * @Date: 2021-03-10 18:57:51
+ * @LastEditors: Nic
+ * @LastEditTime: 2021-05-14 10:26:36
+ * @FilePath: /milkswap-frontend-fork/src/contexts/ThemeContext.tsx
+ */
 import React, { useState } from 'react'
 import { ThemeProvider as SCThemeProvider } from 'styled-components'
-import { light } from '@pancakeswap-libs/uikit'
+import { light, dark } from '@pancakeswap-libs/uikit'
 
 const CACHE_KEY = 'IS_DARK'
 
@@ -21,7 +28,7 @@ const ThemeContextProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <SCThemeProvider theme={light}>{children}</SCThemeProvider>
+      <SCThemeProvider theme={dark}>{children}</SCThemeProvider>
     </ThemeContext.Provider>
   )
 }

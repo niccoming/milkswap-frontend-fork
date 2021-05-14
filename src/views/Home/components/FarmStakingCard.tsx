@@ -1,3 +1,10 @@
+/*
+ * @Author: Nic(❤❤️ niccoming@gmail.com ❤❤️)
+ * @Date: 2021-05-13 22:18:03
+ * @LastEditors: Nic
+ * @LastEditTime: 2021-05-14 14:20:22
+ * @FilePath: /milkswap-frontend-fork/src/views/Home/components/FarmStakingCard.tsx
+ */
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Heading, Card, CardBody, Button } from '@pancakeswap-libs/uikit'
@@ -10,10 +17,10 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  // background-image: url('/images/bowl.svg');
+  background-image: url('/images/tree.svg');
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 75%;
+  background-position: 80% 50%;
+  background-size: 40%;
 `
 
 const Block = styled.div`

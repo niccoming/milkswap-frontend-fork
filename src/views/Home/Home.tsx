@@ -1,3 +1,10 @@
+/*
+ * @Author: Nic(❤❤️ niccoming@gmail.com ❤❤️)
+ * @Date: 2021-05-13 13:15:55
+ * @LastEditors: Nic
+ * @LastEditTime: 2021-05-14 13:53:06
+ * @FilePath: /milkswap-frontend-fork/src/views/Home/Home.tsx
+ */
 import React from 'react'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@pancakeswap-libs/uikit'
@@ -13,7 +20,6 @@ import TwitterCard from './components/TwitterCard';
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/pan-bg-mobile.svg');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -25,7 +31,6 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/bucket.svg'), url('/images/bowl.svg');
     background-position: left center, right center;
     background-size: contain;
     height: 165px;
@@ -73,10 +78,13 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <FatHeading as="h1" size="xl" mb="24px" color="secondary">
-          {/* TranslateString(576, 'CASHCOWSWAP') */}
-          CASHCOWSWAP
-        </FatHeading>
+          <img
+          height="200" width="200"
+            src="/images/cashcowdefi_logo.svg"
+            alt="Cashcowdefi Logo"
+          />
+          <br/>
+          <br/>
         <FatText>
           {/* TranslateString(578, 'The #1 AMM and yield farm on Binance Smart Chain.') */}
           The CASHCOWSWAP AMM and yield farm on Binance Smart Chain.
